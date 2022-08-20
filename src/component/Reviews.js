@@ -4,35 +4,33 @@ function Reviews() {
   return (
     <div className="Reviews">
         <div className="ReviewsMain">
-            <div className='AboutHotelMainName'>REVIEWS</div>
-            <div className="ReviewsMainOneText">
-                <div>
-                    SDJHF FHJO SEDHOFG J EAFHOAIUFH EOIHFAOUH EOHFUOHUOI EOUHFUOGH UFHUGHUOIEH EUHFUWHGF
-                    SDJHF FHJO SEDHOFG J EAFHOAIUFH EOIHFAOUH EOHFUOHUOI EOUHFUOGH UFHUGHUOIEH EUHFUWHGF
+            <div>MAIN TEXT</div>
+            <div className='ReviewsMainText'>
+                <div className='ReviewsMainTextContent'>
+                    serdfgvergergerergergergerg ergergergerg ergergergerg ergergergerg ergergergerg
+                    ergergergerg ergergergerg ergerg erge rgergerge rgergerg ergergerg
                 </div>
-                <div className='ReviewsMainNameUser'>Tom SAEDKFLK</div>
-                <div className='ReviewsMainEMail'>www.fsdfgswfgv@sdgv</div>
+                <div className='ReviewsMainTextUser'>ergerg</div>
+                <div className='ReviewsMainTextEmail'>ergeg</div>
             </div>
-            <div className="ReviewsMainTwoText">
-                <div>
-                    SDJHF FHJO SEDHOFG J EAFHOAIUFH EOIHFAOUH EOHFUOHUOI EOUHFUOGH UFHUGHUOIEH EUHFUWHGF
-                    SDJHF FHJO SEDHOFG J EAFHOAIUFH EOIHFAOUH EOHFUOHUOI EOUHFUOGH UFHUGHUOIEH EUHFUWHGF
+            <div className='ReviewsMainText'>
+                <div className='ReviewsMainTextContent'>
+                    serdfgvergergerergergergerg ergergergerg ergergergerg ergergergerg ergergergerg
+                    ergergergerg ergergergerg ergerg erge rgergerge rgergerg ergergerg
                 </div>
-                <div className='ReviewsMainNameUser'>Tom SAEDKFLK</div>
-                <div className='ReviewsMainEMail'>www.fsdfgswfgv@sdgv</div>
+                <div className='ReviewsMainTextUser'>ergerg</div>
+                <div className='ReviewsMainTextEmail'>ergeg</div>
             </div>
         </div>
         <div className="ReviewsMission">
-            <div className='AboutHotelMainName'>OUR MISSION?</div>
-            <div className="ReviewsMainThreeText">
-                <div  className="ReviewsMainThreeMain">
-                    SDJHF FHJO SEDHOFG J EAFHOAIUFH EOIHFAOUH EOHFUOHUOI EOUHFUOGH UFHUGHUOIEH EUHFUWHGF
+           <div className="ReviewsMissionName">OUR MISSION</div>
+           <div className="ReviewsMissionMain">wefwww fwerf ewqrf ewrgethgt r jhtyejf bsreth rjhh sh  rsth hsrth rth rhr hr hrh rhsrhthskjyiulk </div>
+           <div className="ReviewsMissionSmall">tyjktu hdrfg rtygseyh ykjtkjtuy gfhnfxrg wtg jtyuhkjy jefgbaefg jytdj s tshgs hr jrts fewt eh  r</div>
+           <div className="ReviewsMissionButton">
+                <div className="ReviewsMissionButtonColor">
+                    <div className="ReviewsMissionButtonText">MORE</div>
                 </div>
-                <div  className="ReviewsMainThreeSmall">
-                    SDJHF FHJO SEDHOFG J EAFHOAIUFH EOIHFAOUH EOHFUOHUOI EOUHFUOGH UFHUGHUOIEH EUHFUWHGF
-                </div>
-                <div  className="ReviewsMainThreeButton">More</div>
-            </div>
+           </div>
         </div>
     </div>
   );

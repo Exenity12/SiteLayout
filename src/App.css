@@ -1,79 +1,82 @@
-.App {
-  text-align: center;
-  height: 1000px;
-  width: 1858px;
-}
-
 .MainBoard {
-    position: absolute;
-    height: 1860px;
-    width: 1860px;
-    background-color: rgb(59, 7, 7);
+    height: 1171px;
+    width: 1280px;
+    background-color: rgb(47, 36, 30);
 }
 
 .MainBoardOfContent {
-    position: absolute;
-    left: 5px;
-    height: 1720px;
-    width: 1850px;
-    background-color: white;
+    padding-left: 5px;
+    height: 1071px;
+    width: 1270px;
 }
 
 .MainPartOfContent {
-    position: absolute;
-    left: 160px;
-    height: 1720px;
+    height: 1071px;
+    width: 1270px;
+    background-color: rgb(214, 214, 214);
+}
+
+.header {
+    padding-left: 110px;
+    height: 135px;
     width: 1510px;
-    background-color: white;
+    display: block;
+}
+
+.Header {
+    width: 1100px;
+    display: flex;
 }
 
 .Logo {
-    position: absolute;
-    left: 25px;
-    top: 80px;
-    height: 80px;
-    width: 400px;
-    background-color: white;
-    text-align: left;
+    display: flex;
 }
 
 .LogoSmallText{
-    position: absolute;
-    left: 275px;
-    top: 35px;
+    padding-left: 12px;
+    padding-top: 50px;
+    display: flex;
     height: 30px;
-    width: 300px;
-    background-color: white;
-    border-left: 1px solid grey;
 
 }
 
-.SmallText {
-    position: absolute;
-    top: 5px;
-    left: 10px;
+.SmallTextBorder {
+    padding-left: 14px;
+    border-left: 1px solid grey;
+    height: 25px;
+    width: 60px;
+}
+
+.SmallText{
+    font-size: 10px;
+    padding-top: 5px;
 }
 
 .LogoTaviro {
-    font-size: 70px;
+    color: rgb(76, 56, 55);;
+    padding-top: 20px;
+    display: flex;
+    font-size: 58px;
     font-style: italic;
 }
 
 .LogoSky {
-    position: absolute;
+    padding-top: 42px;
+    display: flex;
     color: rgb(88, 88, 199);
-    top: 28px;
-    left: 230px;
-    font-size: 30px;
+    font-size: 23px;
     writing-mode:vertical-lr;
 }
 
+.BoardOfMainContent{
+    padding-left: 110px;
+    display: block;
+}
+
 .UsefulLinks{
-    position: absolute;
-    top: 240px;
-    height: 100px;
-    width: 100%;
-    background-color:rgb(59, 7, 7);
+    height: 55px;
+    width: 1060px;
+    background-color:rgb(47, 36, 30);
     display: flex;
     justify-content: space-between;
 }
@@ -81,276 +84,264 @@
 .UsefulLinksItem{
     display: inline-block;
     color: white;
-    font-size: 20px;
-    padding-top: 35px;
+    font-size: 13px;
+    padding-top: 19px;
 }
 
 .UsefulLinksItemCrushing{
     display: inline-block;
     color: grey;
-    font-size: 15px;
-    padding-top: 37px;
+    font-size: 13px;
+    padding-top: 18px;
 }
 
 .Search{
-    position: absolute;
-    right: 0px;
-    top: 100px;
-    height: 40px;
-    width: 250px;
+    padding-left: 400px;
+    height: 100px;
+    width: 500px;
+    display: block;
 }
 
 .SearchItem {
-    width: 95%;
+    border-radius: 5px;
+    width: 200px;
+    display: flex;
+    height: 25px;
+    border: 1px solid black;
+}
+
+.BorderSearchItem{
+    padding: 30px 0px 0px 147px;
+    display: flex;
+    width: 230px;
 }
 
 .SearchItemImg{
-    position: absolute;
-    top: 7px;
+    padding: 7px 0px 0px 10px;
     width: 12px;
     height: 12px;
     right: 10px;
+    display: flex;
+}
+
+.SearchItemInput{
+    outline: 0;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(214, 214, 214);;
 }
 
 .SearchItemImgTwitter{
-    position: absolute;
-    left: 1430px;
-    top: 5px;
-    width: 20px;
-    height: 20px;
-    right: 10px;
+    padding-top: 3px;
+    display: flex;
+    width: 25px;
+    height: 25px;
 }
 
 .SearchItemImgFaceBook{
-    position: absolute;
-    left: 1455px;
-    top: 4px;
-    width: 24px;
-    height: 24px;
-    right: 10px;
+    display: flex;
+    width: 32px;
+    height: 32px;
 }
 
 .SearchItemImgGoogle{
-    position: absolute;
-    top: 7px;
-    width: 17px;
-    height: 17px;
-    right: 10px;
+    padding-top: 3px;
+    display: flex;
+    width: 25px;
+    height: 25px;
+}
+
+.BoardLogoLinks{
+    padding: 3px 0px 0px 281px;
+    display: flex;
+}
+
+.BoardOfAboutOtherReviews{
+    padding-top: 70px;
+    display: flex;
+}
+
+.BoardOfAboutAndOther {
+    margin-right: 50px;
 }
 
 .AboutHotel {
-    position: absolute;
-    top: 450px;
-    height: 550px;
-    width: 950px;
-    background-color: white;
+    display: block;
+    height: 330px;
+    width: 620px;
     border-bottom: 1px solid grey;
 }
 
 .AboutHotelMainName {
-    position: absolute;
-    font-size: 40px;
+    height: 30px;
+    font-size: 20px;
     font-style: italic;
-    color: rgb(59, 7, 7);
+    color: rgb(76, 56, 55);
 }
 
 .AboutHotelImg {
-    position: absolute;
-    height: 350px;
-    width: 400px;
-    top: 110px;
-    right: 550px;
+    height: 210px;
+    width: 210px;
 }
 
 .AboutHotelManyText {
-    position: absolute;
+    padding-left: 25px;
+    display: block;
     width: 470px;
     height: 400px;
-    background-color: white;
-    left: 430px;
-    top: 110px;
     text-align: left;
+}
+
+.AboutBoardOfImgAndText {
+    padding-top: 20px;
+    display: flex;
 }
 
 .AboutHotelManyTextSMall {
-    padding-top: 15px;
-    color: rgb(59, 7, 7);
+    padding-top: 25px;
+    font-size: 10px;
+    color: rgb(76, 56, 55);
 }
 
 .AboutHotelManyTextMain {
-    font-size: 18px;
-    color: rgb(59, 7, 7);
+    font-size: 12px;
+    color: rgb(76, 56, 55);
 }
 
+
+.OtherInformationMainName {
+    padding-top: 60px;
+    height: 30px;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(76, 56, 55);
+}
+
+.OtherInformationMainContent {
+    display: block;
+    width: 610px;
+    padding-top: 30px;
+}
+
+.OtherInformationMainContentList{
+    display: block;
+    width: 610px;
+    padding-top: 30px;
+}
+
+.OtherInformationMainContentItem{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.OtherInformationMainContentItemText {
+    display: block;
+}
+
+
+.OtherInformationMainContentItemImg {
+    height: 40px;
+    width: 40px;
+}
+
+.OtherInformationMainContentItemTextMain{
+    padding-left: 15px;
+}
+
+.OtherInformationMainContentItemText{
+    font-size: 12px;
+}
+
+.OtherInformationMainContentItemTextSmall{
+    font-size: 9px;
+}
+
+
+
+
+
 .Reviews{
-    position: absolute;
-    top: 450px;
-    left: 1000px;
-    height: 1150px;
-    width: 500px;
-    background-color: white;
+    padding-right: 50px;
+    height: 755px;
+    width: 340px;
     border-left: 1px solid grey;
 }
 
-.ReviewsMain {
-    position: absolute;
-    background-color: white;
-    width: 400px;
-    height: 600px;
-    left: 50px;
-    text-align: left;
+.ReviewsMain{
+    padding-left: 60px;
 }
 
-.ReviewsMission {
-    position: absolute;
-    background-color: white;
-    width: 400px;
-    height: 400px;
-    left: 50px;
-    top: 630px;
-    text-align: left;
+.ReviewsMainText {
+    padding-top: 45px;
+    padding-left: 20px;
+    width: 320px;
 }
 
-.ReviewsMainThreeMain {
-    font-size: 20px;
-    width: 480px;
-    font-weight: 700;
+.ReviewsMainTextContent {
+    font-size: 15px;
 }
 
-.ReviewsMainThreeSmall {
-    margin-top: 20px;
-    width: 480px;
+.ReviewsMainTextUser {
+    font-size: 15px;
+    padding-top: 25px;
 }
 
-.ReviewsMainThreeButton {
-    margin-top: 20px;
-    background-color: black;
-    color: white;
-    width: 70px;
-    text-align: center;
-}
-
-.ReviewsMainOneText {
-    position: absolute;
-    width: 350px;
-    height: 250px;
-    left: 50px;
-    top: 80px;
-}
-
-.ReviewsMainTwoText {
-    position: absolute;
-    width: 350px;
-    height: 250px;
-    left: 50px;
-    top: 340px;
-}
-
-.ReviewsMainThreeText {
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    top: 80px;
-}
-
-.ReviewsMainEMail {
+.ReviewsMainTextEmail {
+    font-size: 15px;
+    padding-top: 1px;
     color: blue;
 }
 
-.ReviewsMainNameUser {
-    margin-top: 10px;
+.ReviewsMission {
+    padding-top: 55px;
+    padding-left: 55px;
+    width: 330px;
 }
 
-
-.OtherInformation {
-    position: absolute;
-    top: 1050px;
-    height: 550px;
-    width: 950px;
-    background-color: white;
+.ReviewsMissionName{
+    font-size: 23px;
 }
 
-.OtherInformationOne{
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    width: 850px;
-    height: 90px;
-    background-color: white;
+.ReviewsMissionMain{
+    font-size: 15px;
+    padding-top: 30px;
 }
 
-.OtherInformationTwo{
-    position: absolute;
-    top: 210px;
-    left: 100px;
-    width: 850px;
-    height: 90px;
-    background-color: white;
+.ReviewsMissionSmall{
+    font-size: 12px;
+    padding-top: 30px;
 }
 
-.OtherInformationThree{
-    position: absolute;
-    top: 330px;
-    left: 100px;
-    width: 850px;
-    height: 90px;
-    background-color: white;
+.ReviewsMissionButton{
+    padding-top: 30px;
 }
 
-.OtherInformationFour{
-    position: absolute;
-    top: 440px;
-    left: 100px;
-    width: 850px;
-    height: 90px;
-    background-color: white;
-}
-
-.OtherInformationItem {
-    top: 0px;
-    position: absolute;
-    text-align: left;
-}
-
-.OtherInformationImgOne {
-    position: absolute;
-    right: 860px;
+.ReviewsMissionButtonColor{
+    background-color: rgb(47, 36, 30);
     width: 70px;
-    height: 70px;
+    height: 25px;
 }
 
-.OtherInformationImgTwo {
-    position: absolute;
-    right: 850px;
-    width: 90px;
-    height: 90px;
+.ReviewsMissionButtonText{
+    padding: 5px 0px 0px 18px;
+    font-size: 12px;
+    color: white;
 }
 
-.OtherInformationImgThree {
-    position: absolute;
-    right: 860px;
-    width: 70px;
-    height: 70px;
-}
-
-.OtherInformationImgFour {
-    position: absolute;
-    right: 860px;
-    width: 70px;
-    height: 70px;
+.BoardOfEnd{
+    display: flex;
 }
 
 .privacy{
-    position: absolute;
-    top: 1800px;
-    left: -50px;
+    padding: 50px 0px 0px 110px;
+    font-size: 8px;
     color: grey;
+    width: 100px;
 }
 
 .helper{
-    position: absolute;
-    top: 1800px;
-    left: 1200px;
+    padding: 50px 0px 0px 780px;
     color: grey;
+    font-size: 8px;
     width: 400px;
 }
