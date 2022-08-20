@@ -3,8 +3,8 @@ import '../App.css';
 function Reviews() {
   return (
     <div className="Reviews">
-        <div className="ReviewsMain">
-            <div>MAIN TEXT</div>
+        <ul className="ReviewsMain">
+        <h1 className='AboutHotelMainName'>MAIN TEXT</h1>
             <div className='ReviewsMainText'>
                 <div className='ReviewsMainTextContent'>
                     serdfgvergergerergergergerg ergergergerg ergergergerg ergergergerg ergergergerg
@@ -21,7 +21,7 @@ function Reviews() {
                 <div className='ReviewsMainTextUser'>ergerg</div>
                 <div className='ReviewsMainTextEmail'>ergeg</div>
             </div>
-        </div>
+        </ul>
         <div className="ReviewsMission">
            <div className="ReviewsMissionName">OUR MISSION</div>
            <div className="ReviewsMissionMain">wefwww fwerf ewqrf ewrgethgt r jhtyejf bsreth rjhh sh  rsth hsrth rth rhr hr hrh rhsrhthskjyiulk </div>

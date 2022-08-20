@@ -1,24 +1,20 @@
 .MainBoard {
-    height: 1171px;
     width: 1280px;
     background-color: rgb(47, 36, 30);
 }
 
 .MainBoardOfContent {
     padding-left: 5px;
-    height: 1071px;
     width: 1270px;
 }
 
 .MainPartOfContent {
-    height: 1071px;
     width: 1270px;
     background-color: rgb(214, 214, 214);
 }
 
 .header {
     padding-left: 110px;
-    height: 135px;
     width: 1510px;
     display: block;
 }
@@ -73,7 +69,12 @@
     display: block;
 }
 
+.UsefulLinksMain{
+    padding-top: 40px;
+}
+
 .UsefulLinks{
+    margin: 0px;
     height: 55px;
     width: 1060px;
     background-color:rgb(47, 36, 30);
@@ -97,7 +98,6 @@
 
 .Search{
     padding-left: 400px;
-    height: 100px;
     width: 500px;
     display: block;
 }
@@ -106,7 +106,6 @@
     border-radius: 5px;
     width: 200px;
     display: flex;
-    height: 25px;
     border: 1px solid black;
 }
 
@@ -119,7 +118,6 @@
 .SearchItemImg{
     padding: 7px 0px 0px 10px;
     width: 12px;
-    height: 12px;
     right: 10px;
     display: flex;
 }
@@ -135,20 +133,17 @@
     padding-top: 3px;
     display: flex;
     width: 25px;
-    height: 25px;
 }
 
 .SearchItemImgFaceBook{
     display: flex;
     width: 32px;
-    height: 32px;
 }
 
 .SearchItemImgGoogle{
     padding-top: 3px;
     display: flex;
     width: 25px;
-    height: 25px;
 }
 
 .BoardLogoLinks{
@@ -166,21 +161,20 @@
 }
 
 .AboutHotel {
+    padding-bottom: 50px;
     display: block;
-    height: 330px;
     width: 620px;
     border-bottom: 1px solid grey;
 }
 
 .AboutHotelMainName {
-    height: 30px;
-    font-size: 20px;
+    margin: 0px;
+    font-size: 30px;
     font-style: italic;
     color: rgb(76, 56, 55);
 }
 
 .AboutHotelImg {
-    height: 210px;
     width: 210px;
 }
 
@@ -188,7 +182,6 @@
     padding-left: 25px;
     display: block;
     width: 470px;
-    height: 400px;
     text-align: left;
 }
 
@@ -210,10 +203,10 @@
 
 
 .OtherInformationMainName {
-    padding-top: 60px;
-    height: 30px;
-    font-size: 20px;
+    padding-top: 40px;
+    font-size: 30px;
     font-style: italic;
+    margin: 0px;
     color: rgb(76, 56, 55);
 }
 
@@ -227,6 +220,7 @@
     display: block;
     width: 610px;
     padding-top: 30px;
+    padding-left: 0px;
 }
 
 .OtherInformationMainContentItem{
@@ -262,7 +256,6 @@
 
 .Reviews{
     padding-right: 50px;
-    height: 755px;
     width: 340px;
     border-left: 1px solid grey;
 }
@@ -295,6 +288,7 @@
 .ReviewsMission {
     padding-top: 55px;
     padding-left: 55px;
+    padding-bottom: 12px;
     width: 330px;
 }
 
@@ -330,6 +324,7 @@
 
 .BoardOfEnd{
     display: flex;
+    height: 100px;
 }
 
 .privacy{

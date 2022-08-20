@@ -3,7 +3,7 @@ import '../App.css';
 function AboutHotel() {
   return (
     <div className='AboutHotel'>
-        <div className='AboutHotelMainName'>ABOUT HOTEL</div>
+        <h1 className='AboutHotelMainName'>ABOUT HOTEL</h1>
         <div className='AboutBoardOfImgAndText'>
             <img alt='alt' className='AboutHotelImg' src='https://prozhektor.info/wp-content/uploads/2019/12/otel.jpg'></img>
             <div className='AboutHotelManyText'>

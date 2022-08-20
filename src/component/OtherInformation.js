@@ -32,8 +32,8 @@ function OtherInformation() {
 
   return (
     <div className='OtherInformation'>
-        <div className='OtherInformationMainName'>DID YOU NOW?</div>
-        <div className='OtherInformationMainContentList'>
+        <h1 className='OtherInformationMainName'>DID YOU NOW?</h1>
+        <ul className='OtherInformationMainContentList'>
             <div className='OtherInformationMainContentItem'>
                 <div>
                     <img src="https://avatars.mds.yandex.net/i?id=ec7aedee4c8f463108838bd3672e6d1b-5888854-images-thumbs&n=13" alt="alt" className='OtherInformationMainContentItemImg'></img>
@@ -94,6 +94,51 @@ function OtherInformation() {
                 </div>
             </div>
 
+            <div className='OtherInformationMainContentItem'>
+                <div>
+                    <img src="https://plus-clean.ru/wp-content/uploads/2021/06/em3kkwtweaa3vtd.jpg" alt="alt" className='OtherInformationMainContentItemImg'></img>
+                </div>
+                <div className='OtherInformationMainContentItemTextMain'>
+                    <div className='OtherInformationMainContentItemText'>
+                        "НЕ МНОГО ТЕКСТА"
+                    </div>
+                    <div className='OtherInformationMainContentItemTextSmall'>
+                        "ОЧень много текста маленькими буквамитекста тут вообще очень много и еще больше Управление громкостью наушников осуществляется
+                        посредством встроенного в гарнитуру Meta Quest 2 регулятора.
+                    </div>
+                </div>
+            </div>
+
+            <div className='OtherInformationMainContentItem'>
+                <div>
+                    <img src="https://plus-clean.ru/wp-content/uploads/2021/06/em3kkwtweaa3vtd.jpg" alt="alt" className='OtherInformationMainContentItemImg'></img>
+                </div>
+                <div className='OtherInformationMainContentItemTextMain'>
+                    <div className='OtherInformationMainContentItemText'>
+                        "НЕ МНОГО ТЕКСТА"
+                    </div>
+                    <div className='OtherInformationMainContentItemTextSmall'>
+                        "ОЧень много текста маленькими буквамитекста тут вообще очень много и еще больше Управление громкостью наушников осуществляется
+                        посредством встроенного в гарнитуру Meta Quest 2 регулятора.
+                    </div>
+                </div>
+            </div>
+
+            <div className='OtherInformationMainContentItem'>
+                <div>
+                    <img src="https://plus-clean.ru/wp-content/uploads/2021/06/em3kkwtweaa3vtd.jpg" alt="alt" className='OtherInformationMainContentItemImg'></img>
+                </div>
+                <div className='OtherInformationMainContentItemTextMain'>
+                    <div className='OtherInformationMainContentItemText'>
+                        "НЕ МНОГО ТЕКСТА"
+                    </div>
+                    <div className='OtherInformationMainContentItemTextSmall'>
+                        "ОЧень много текста маленькими буквамитекста тут вообще очень много и еще больше Управление громкостью наушников осуществляется
+                        посредством встроенного в гарнитуру Meta Quest 2 регулятора.
+                    </div>
+                </div>
+            </div>
+
 
             {/* {arr.map(item => {
                 <div className='OtherInformationMainContentItem'>
@@ -111,7 +156,7 @@ function OtherInformation() {
                     </div>
                 </div>
             })} */}
-        </div>
+        </ul>
     </div>
   );
 }
