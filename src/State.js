@@ -6,16 +6,16 @@ let store = {
     //     arrValue: [],
     // },
 
-    _callSubscriber() {
-        console.log("123124");
-    },
+    // _callSubscriber() {
+    //     console.log("123124");
+    // },
     
     getState() {
         return this._State;
     },
-    subscribe(observer) {
-        this._callSubscriber = observer;
-    },
+    // subscribe(observer) {
+    //     this._callSubscriber = observer;
+    // },
 
     dispatch( action ){
 
@@ -25,8 +25,5 @@ let store = {
 
     },
 };
-
-
-
 
 export default store

@@ -210,6 +210,10 @@
     color: rgb(76, 56, 55);
 }
 
+.OtherInformation {
+    border-bottom: 1px solid grey;
+}
+
 .OtherInformationMainContent {
     display: block;
     width: 610px;
@@ -347,23 +351,20 @@
 
 
 .Board {
-    margin: 100px 0px 0px 400px;
+    margin: 30px 0px 0px 10px;
     display: flex;
 }
 
 .TextArea {
     width: 600px;
-}
-
-.Button {
-    margin-top: 4px;
+    height: 100px;
 }
 
 .Red {
     width: 600px;
     height: 100px;
     border: 1px solid red;
-    margin: 20px 0px 0px 400px;
+    margin: 20px 0px 20px 10px;
 }
 
 .word {

@@ -5,8 +5,6 @@ let reducers = combineReducers({
     allInformation: reducer,
 });
 
-
 let store = createStore(reducers);
-
 
 export default store; 

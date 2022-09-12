@@ -1,8 +1,7 @@
 let initialState = {
     value: "",
-    arrValue: [],
+    arrValue: "",
 }
-
 
 export const reducer = (state = initialState, action) => {
 switch(action.type) {
@@ -10,8 +9,8 @@ switch(action.type) {
         state.value = action.body;
         return state;
     case "SAND":
-        state.arrValue.push(state.value)
-        state.value = [];
+        state.arrValue += state.value + " ";
+        state.value = '';
         return state;
     default: return state;
 };
