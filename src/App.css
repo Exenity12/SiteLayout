@@ -152,7 +152,7 @@
 }
 
 .BoardOfAboutOtherReviews{
-    padding-top: 70px;
+    padding-top: 30px;
     display: flex;
 }
 
@@ -369,6 +369,14 @@
 
 .word {
     display: flex;
+}
+
+.MainName {
+    padding-top: 10px;
+    font-size: 30px;
+    font-style: italic;
+    margin: 0px;
+    color: rgb(76, 56, 55);
 }
 
 

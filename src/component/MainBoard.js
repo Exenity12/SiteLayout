@@ -46,9 +46,9 @@ function MainBoard(props) {
                     <UsefulLinks />
                     <div className='BoardOfAboutOtherReviews'>
                         <div className='BoardOfAboutAndOther'>
-                            <AboutHotel />
-                            <OtherInformation />
-                            <h2 className='OtherInformationMainName'>Translater</h2>
+                            {/* <AboutHotel /> */}
+                            {/* <OtherInformation /> */}
+                            <h2 className='MainName'>Translater</h2>
                             <div className='Board'>
                                 <textarea
                                     className='TextArea'
