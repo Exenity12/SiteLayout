@@ -1,22 +1,7 @@
-.MainBoard {
-    width: 1280px;
-    background-color: rgb(47, 36, 30);
-}
-
-.MainBoardOfContent {
-    padding-left: 5px;
-    width: 1270px;
-}
-
-.MainPartOfContent {
-    width: 1270px;
+.App {
+    width: 1100px;
     background-color: rgb(214, 214, 214);
-}
-
-.header {
-    padding-left: 110px;
-    width: 1510px;
-    display: block;
+    min-height: 700px;
 }
 
 .Header {
@@ -160,104 +145,6 @@
     margin-right: 50px;
 }
 
-.AboutHotel {
-    padding-bottom: 50px;
-    display: block;
-    width: 620px;
-    border-bottom: 1px solid grey;
-}
-
-.AboutHotelMainName {
-    margin: 0px;
-    font-size: 30px;
-    font-style: italic;
-    color: rgb(76, 56, 55);
-}
-
-.AboutHotelImg {
-    width: 210px;
-}
-
-.AboutHotelManyText {
-    padding-left: 25px;
-    display: block;
-    width: 470px;
-    text-align: left;
-}
-
-.AboutBoardOfImgAndText {
-    padding-top: 20px;
-    display: flex;
-}
-
-.AboutHotelManyTextSMall {
-    padding-top: 25px;
-    font-size: 10px;
-    color: rgb(76, 56, 55);
-}
-
-.AboutHotelManyTextMain {
-    font-size: 12px;
-    color: rgb(76, 56, 55);
-}
-
-
-.OtherInformationMainName {
-    padding-top: 40px;
-    font-size: 30px;
-    font-style: italic;
-    margin: 0px;
-    color: rgb(76, 56, 55);
-}
-
-.OtherInformation {
-    border-bottom: 1px solid grey;
-}
-
-.OtherInformationMainContent {
-    display: block;
-    width: 610px;
-    padding-top: 30px;
-}
-
-.OtherInformationMainContentList{
-    display: block;
-    width: 610px;
-    padding-top: 30px;
-    padding-left: 0px;
-}
-
-.OtherInformationMainContentItem{
-    display: flex;
-    padding-bottom: 20px;
-}
-
-.OtherInformationMainContentItemText {
-    display: block;
-}
-
-
-.OtherInformationMainContentItemImg {
-    height: 40px;
-    width: 40px;
-}
-
-.OtherInformationMainContentItemTextMain{
-    padding-left: 15px;
-}
-
-.OtherInformationMainContentItemText{
-    font-size: 12px;
-}
-
-.OtherInformationMainContentItemTextSmall{
-    font-size: 9px;
-}
-
-
-
-
-
 .Reviews{
     padding-right: 50px;
     width: 340px;
@@ -326,47 +213,58 @@
     color: white;
 }
 
-.BoardOfEnd{
-    display: flex;
-    height: 100px;
+
+
+
+
+
+span {
+    color: gray;
 }
 
-.privacy{
-    padding: 50px 0px 0px 110px;
-    font-size: 8px;
-    color: grey;
-    width: 100px;
-}
-
-.helper{
-    padding: 50px 0px 0px 780px;
-    color: grey;
-    font-size: 8px;
-    width: 400px;
-}
-
-
-
-
-
-
-.Board {
-    margin: 30px 0px 0px 10px;
+.PageContent {
     display: flex;
 }
 
-.TextArea {
-    width: 600px;
-    height: 100px;
+.SavesUsersText {
+    width: 160px;
+    min-width: 160px;
+    margin: 60px 0px 0px 30px;
 }
 
-.Red {
-    font-family: 'Arm Rus Learn 7'; 
+.SaveItem {
+    display: flex;
+}
+
+.localItem {
+    display: flex;
+    margin: 10px 0px 0px 5px;
+}
+
+.SaveItem {
+    display: block;
+    margin: 10px 0px 0px 5px;
+}
+
+.UsersSave {
+    margin: 0px 30px 0px 20px;
+}
+
+.HeadingPage {
+    margin: 20px 0px 0px 310px;
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(76, 56, 55);
+}
+
+.CustomActions {
+    margin: 30px 0px 0px 50px;
+    display: flex;
+}
+
+.UserInput {
     width: 600px;
-    height: 100px;
-    border: 1px solid red;
-    margin: 20px 0px 20px 10px;
-    text-transform: uppercase;
+    min-height: 100px;
 }
 
 @font-face {
@@ -374,26 +272,18 @@
 	src: url(./arm-rus-learn7.ttf); 
 }
 
-@font-face {
-	font-family: 'Arm Rus Learn 7'; 
-	src: local('Arm Rus Learn 7'),
-		url(./arm-rus-learn7.ttf); 
+.TranslatedText {
+    font-family: 'Arm Rus Learn 7'; 
+    width: 600px;
+    min-height: 100px;
+    border: 1px solid red;
+    margin: 30px 0px 0px 50px;
+    text-transform: uppercase;
+    padding: 10px;
 }
 
-.word {
-    display: flex;
-}
-
-.MainName {
-    padding-top: 10px;
-    font-size: 30px;
-    font-style: italic;
-    margin: 0px;
-    color: rgb(76, 56, 55);
-}
-
-span {
-    color: gray;
+.ButtonSave {
+    margin-left: 330px;
 }
 
 

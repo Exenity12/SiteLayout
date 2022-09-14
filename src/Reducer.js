@@ -12,6 +12,9 @@ switch(action.type) {
         state.arrValue += state.value + " ";
         state.value = '';
         return state;
+    case "LOAD":
+        state.arrValue = action.body;
+        return state;
     default: return state;
 };
 };

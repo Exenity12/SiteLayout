@@ -5,8 +5,8 @@ import Search from './Search';
 function Header() {
   return (
     <div className='Header'>
-        <Logo />
-        <Search />
+      <Logo />
+      <Search />
     </div>
   );
 }

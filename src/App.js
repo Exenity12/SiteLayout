@@ -1,12 +1,17 @@
+import { React } from 'react';
 import './App.css';
-import MainBoard from './component/MainBoard.js'
+import Header from './component/Header.js'
+import UsefulLinks from './component/UsefulLinks.js'
+import Translater from './component/Translater.js'
+
 
 function App(props) {
 
-
   return (
     <div className="App">
-        <MainBoard appState={props.appState} dispatch={props.dispatch}/>
+      <Header />
+      <UsefulLinks />
+      <Translater appState={props.appState} dispatch={props.dispatch}/>
     </div>
   );
 }
