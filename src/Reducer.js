@@ -9,7 +9,7 @@ switch(action.type) {
         state.value = action.body;
         return state;
     case "SAND":
-        state.arrValue += state.value + " ";
+        state.arrValue = state.value;
         state.value = '';
         return state;
     case "LOAD":

@@ -1,13 +1,12 @@
 import '../App.css';
-import { React, useState, useEffect } from 'react';
+import { React, useState } from 'react';
 
 let getFormatedText = (str) => {
-
     let number = 0;
     let formatedStr = '';
 
     while(number < str.length) {
-        if(str[number] === "й" || str[number] === "я" || str[number] === "ъ") {
+        if(str[number] === "я" || str[number] === "ъ" || str[number] === "ё" || str[number] === "ю" || str[number] === "ь") {
             formatedStr += `<span class="letter">${str[number]}</span>`;
         } else {
             formatedStr += str[number];
@@ -29,6 +28,32 @@ let getStorageForRender = () => {
     return requiredValues
 };
 
+let getShortString = (string) => {
+    let str = ""
+    let itemNumber = 0;
+    let stringNumber = string.length;
+    let maxNumber = 20;
+    while(itemNumber < stringNumber && itemNumber < maxNumber) {
+        if(string[itemNumber] === "<") {
+            while(string[itemNumber] !== ">") {
+                itemNumber++;
+                stringNumber++;
+                maxNumber++;
+            };
+            itemNumber++;
+            stringNumber++;
+            maxNumber++;
+        };
+        str += string[itemNumber];
+        itemNumber++;
+    }
+    if(string.length > maxNumber) {
+        str += "..."
+    };
+    console.log(str)
+    return str;
+}
+
 function Translater(props) {
 
     let deleteThis = (e) => {
@@ -48,7 +73,7 @@ function Translater(props) {
             type: 'LOAD',
             body: localStorage[e.target.id],
         });
-    }
+    };
 
     let funct = () => {
         let renderValue = getStorageForRender().map((item, index) => 
@@ -58,8 +83,12 @@ function Translater(props) {
                     id={item}
                     onClick={loadThis}
                     className='UsersSave'>
-                    Save{index + 1}
+                    Сохранение{index + 1}
                 </div>
+                <div
+                    dangerouslySetInnerHTML={{__html: getShortString(localStorage.getItem(item))}}
+                    className="saveText"
+                    ></div>
                 <button
                     id={item}
                     className='DeleteSave'
@@ -68,8 +97,8 @@ function Translater(props) {
                 </button>
             </div>
         )
-        return renderValue
-    }
+        return renderValue;
+    };
 
     const [renderValueState, setRenderValueState] = useState(funct());
     const { appState } = props;
@@ -91,14 +120,9 @@ function Translater(props) {
     
 
     return (
-        <div className='PageContent'>
-            <div className='SavesUsersText'>
-                <div className='SaveItem'>
-                    {renderValueState}
-                </div>
-            </div>
+        <div className='ContentTranslate'>
             <div className='UserWork'>
-                <h2 className='HeadingPage'>Translater</h2>
+                <h2 className='HeadingPage'>Transform Rus-Arm</h2>
                 <div className='CustomActions'>
                     <textarea
                         className='UserInput'
@@ -112,15 +136,20 @@ function Translater(props) {
                         Обработать
                     </button>
                 </div>
-                <div className='TranslatedText' dangerouslySetInnerHTML={{__html: getFormatedText(allInformation.arrValue)}}></div>
-                <button
-                    className='ButtonSave'
-                    onClick={creatingSave}>
-                    Save
-                </button>
+                <div className='SaveItem'>
+                    {renderValueState}
+                </div>
+                <div className='textOutputAndSaving'>
+                    <div className='TranslatedTextRusArm' dangerouslySetInnerHTML={{__html: getFormatedText(allInformation.arrValue)}}></div>
+                    <button
+                        className='ButtonSave'
+                        onClick={creatingSave}>
+                        Save
+                    </button>
+                </div>
             </div>
         </div>
     );
-}
+};
 
 export default Translater;

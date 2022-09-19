@@ -1,21 +1,42 @@
+span {
+    color: gray;
+}
+
+@font-face {
+	font-family: 'Arm Rus Learn 8'; 
+	src: url(./arm-rus-learn8.ttf); 
+}
+
+.App-Background {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
 .App {
-    width: 1100px;
-    background-color: rgb(214, 214, 214);
-    min-height: 700px;
+    max-width: 1700px;
+    width: 80%;
+    min-height: 100%;
+    background-color: rgb(231, 231, 231);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .Header {
-    width: 1100px;
+    width: 100%;
     display: flex;
 }
 
 .Logo {
     display: flex;
+    margin: 0px 0px 0px 50px;
 }
 
 .LogoSmallText{
     padding-left: 12px;
-    padding-top: 50px;
+    padding-top: 55px;
     display: flex;
     height: 30px;
 
@@ -42,7 +63,7 @@
 }
 
 .LogoSky {
-    padding-top: 42px;
+    padding-top: 47px;
     display: flex;
     color: rgb(88, 88, 199);
     font-size: 23px;
@@ -55,19 +76,25 @@
 }
 
 .UsefulLinksMain{
-    padding-top: 40px;
+    margin-top: 30px;
+    height: 55px;
+    width: 100%;
+    background-color:rgb(47, 36, 30);
 }
 
 .UsefulLinks{
     margin: 0px;
     height: 55px;
-    width: 1060px;
-    background-color:rgb(47, 36, 30);
+    width: 50%;
     display: flex;
     justify-content: space-between;
-}
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0%;
+}   
 
 .UsefulLinksItem{
+    text-decoration: none;
     display: inline-block;
     color: white;
     font-size: 13px;
@@ -81,155 +108,91 @@
     padding-top: 18px;
 }
 
-.Search{
-    padding-left: 400px;
-    width: 500px;
+.PageContent {
+    min-height: 687px;
+}
+
+
+
+
+
+
+
+
+.MainPage {
+    width: 100%;
+    min-height: 687px;
     display: block;
 }
 
-.SearchItem {
-    border-radius: 5px;
-    width: 200px;
+.ExamplesAbout {
+    width: 100%;
+}
+
+.Examples {
     display: flex;
-    border: 1px solid black;
+    flex-direction: row;
 }
 
-.BorderSearchItem{
-    padding: 30px 0px 0px 147px;
+.ExamplesRus {
+    width: 50%;
+}
+
+.ExamplesRusItem {
+    border: 5px solid orange;
+    border-radius: 10px;
+    margin: 5px 10px 10px 10px;
+    padding: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Arm Rus Learn 8'; 
+}
+
+.ExamplesArm {
+    width: 50%;
+}
+
+.ExamplesArmItem {
+    border: 5px solid orange;
+    border-radius: 10px;
+    margin: 5px 10px 10px 10px;
+    padding: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Arm Rus Learn 8'; 
+}
+
+.ExamplesAboutTextName {
+    font-size: 30px;
+    margin-left: 80px;
+}
+
+.ExamplesAboutTextItem {
+    font-size: 24px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ContentTranslate {
+    margin-top: 15px;
     display: flex;
-    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.SearchItemImg{
-    padding: 7px 0px 0px 10px;
-    width: 12px;
-    right: 10px;
-    display: flex;
-}
-
-.SearchItemInput{
-    outline: 0;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(214, 214, 214);;
-}
-
-.SearchItemImgTwitter{
-    padding-top: 3px;
-    display: flex;
-    width: 25px;
-}
-
-.SearchItemImgFaceBook{
-    display: flex;
-    width: 32px;
-}
-
-.SearchItemImgGoogle{
-    padding-top: 3px;
-    display: flex;
-    width: 25px;
-}
-
-.BoardLogoLinks{
-    padding: 3px 0px 0px 281px;
-    display: flex;
-}
-
-.BoardOfAboutOtherReviews{
-    padding-top: 30px;
-    display: flex;
-}
-
-.BoardOfAboutAndOther {
-    margin-right: 50px;
-}
-
-.Reviews{
-    padding-right: 50px;
-    width: 340px;
-    border-left: 1px solid grey;
-}
-
-.ReviewsMain{
-    padding-left: 60px;
-}
-
-.ReviewsMainText {
-    padding-top: 45px;
-    padding-left: 20px;
-    width: 320px;
-}
-
-.ReviewsMainTextContent {
-    font-size: 15px;
-}
-
-.ReviewsMainTextUser {
-    font-size: 15px;
-    padding-top: 25px;
-}
-
-.ReviewsMainTextEmail {
-    font-size: 15px;
-    padding-top: 1px;
-    color: blue;
-}
-
-.ReviewsMission {
-    padding-top: 55px;
-    padding-left: 55px;
-    padding-bottom: 12px;
-    width: 330px;
-}
-
-.ReviewsMissionName{
-    font-size: 23px;
-}
-
-.ReviewsMissionMain{
-    font-size: 15px;
-    padding-top: 30px;
-}
-
-.ReviewsMissionSmall{
-    font-size: 12px;
-    padding-top: 30px;
-}
-
-.ReviewsMissionButton{
-    padding-top: 30px;
-}
-
-.ReviewsMissionButtonColor{
-    background-color: rgb(47, 36, 30);
-    width: 70px;
-    height: 25px;
-}
-
-.ReviewsMissionButtonText{
-    padding: 5px 0px 0px 18px;
-    font-size: 12px;
-    color: white;
-}
-
-
-
-
-
-
-span {
-    color: gray;
-}
-
-.PageContent {
-    display: flex;
-}
-
-.SavesUsersText {
-    width: 160px;
-    min-width: 160px;
-    margin: 60px 0px 0px 30px;
+.UserWork {
+    width: 100%;
 }
 
 .SaveItem {
@@ -237,53 +200,86 @@ span {
 }
 
 .localItem {
-    display: flex;
+    width: 200px;
     margin: 10px 0px 0px 5px;
+    border: 1px solid black;
 }
 
 .SaveItem {
-    display: block;
-    margin: 10px 0px 0px 5px;
+    display: flex;
+    width: 100%;
+    min-height: 100px;  
+    margin: 10px 0px 20px 5px;
 }
 
 .UsersSave {
-    margin: 0px 30px 0px 20px;
+    margin: 0px auto 0px auto;
+    font-size: 20px;
+    width: 120px;
+}
+
+.UserClick {
+    min-width: 90px;
+    margin-left: 10px;
+}
+
+.saveText {
+    width: 200px;
+    padding-left: 10px;
+}
+
+.DeleteSave {
+    width: 55px;
+    margin: 3px 0px 3px 60px;
 }
 
 .HeadingPage {
-    margin: 20px 0px 0px 310px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
     font-size: 30px;
     font-style: italic;
     color: rgb(76, 56, 55);
 }
 
 .CustomActions {
-    margin: 30px 0px 0px 50px;
+    width: 95%;
+    max-width: 1410px;
+    margin: 30px auto 0px auto;
     display: flex;
 }
 
 .UserInput {
-    width: 600px;
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    
     min-height: 100px;
 }
 
-@font-face {
-	font-family: 'Arm Rus Learn 7'; 
-	src: url(./arm-rus-learn7.ttf); 
+.textOutputAndSaving {
+    display: flex;
+    width: 95%;
+    max-width: 1400px;
+    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.TranslatedText {
-    font-family: 'Arm Rus Learn 7'; 
-    width: 600px;
-    min-height: 100px;
-    border: 1px solid red;
-    margin: 30px 0px 0px 50px;
+.TranslatedTextRusArm {
+    font-family: 'Arm Rus Learn 8'; 
+    width: 100%;
+    min-height: 250px;
+    border: 5px solid orange;
+    border-radius: 15px;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 5px 10px 5px 10px;
+    font-size: 42px;
 }
 
 .ButtonSave {
-    margin-left: 330px;
+    margin-left: 10px;
+    min-width: 90px;
 }
 
 
@@ -292,3 +288,21 @@ span {
 
 
 
+
+
+.Footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(47, 36, 30);
+    margin-top: auto;
+    margin-bottom: 0%;
+}
+
+.Footer-Text {
+    width: 200px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 40px;
+    color: white;
+}

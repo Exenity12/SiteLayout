@@ -1,21 +1,20 @@
 import '../App.css';
+import { NavLink } from 'react-router-dom';
 
 function UsefulLinks() {
   return (
     <div className="UsefulLinksMain">
         <ul className="UsefulLinks">
             <div className='UsefulLinksItem'></div>
-            <div className='UsefulLinksItem'>MAIN PAGE</div>
             <div className='UsefulLinksItemCrushing'>|</div>
-            <div className='UsefulLinksItem'>ABOUT OUR HOTEL</div>
+            <NavLink to="/" className='UsefulLinksItem'>Главная страница</NavLink>
             <div className='UsefulLinksItemCrushing'>|</div>
-            <div className='UsefulLinksItem'>OUR ROOMS</div>
+            <NavLink to="/RusArmTransform" className='UsefulLinksItem'>Рус-Арм трансформация</NavLink>
             <div className='UsefulLinksItemCrushing'>|</div>
-            <div className='UsefulLinksItem'>SPECIAL OFFERS</div>
+            <NavLink to="/About" className='UsefulLinksItem'>О сайте</NavLink>
             <div className='UsefulLinksItemCrushing'>|</div>
-            <div className='UsefulLinksItem'>LATEST NEWS & EVENTS</div>
+            <NavLink to="/AboutMe" className='UsefulLinksItem'>О мне</NavLink>
             <div className='UsefulLinksItemCrushing'>|</div>
-            <div className='UsefulLinksItem'>OUR CONTACT</div>
             <div className='UsefulLinksItem'></div>
         </ul>
     </div>

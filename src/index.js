@@ -3,12 +3,14 @@ import React from 'react';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import store from './Redux-store';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
 let rerenderEntireTree = () => {
   ReactDom.render(
-    <App appState={store.getState()} dispatch={store.dispatch.bind(store)}/>,
-    document.getElementById("root")
+    <BrowserRouter>
+      <App appState={store.getState()} dispatch={store.dispatch.bind(store)}/>
+    </BrowserRouter>, document.getElementById("root")
   );
 }
 rerenderEntireTree(store);
